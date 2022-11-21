@@ -1,0 +1,38 @@
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+	<teiHeader>
+		<fileDesc>
+			<titleStmt>
+				<title>Der Sandmann</title>
+				<author>E.T.A. Hoffmann</author>
+				<respStmt>
+					<resp>Editor</resp>
+					<name xml:id="MM">Maira Martini</name>
+				</respStmt>
+			</titleStmt>
+			<publicationStmt>
+				<publisher>Sito web Il Mago Sabbiolino</publisher>
+				<date>2022</date>
+				<availability status="limited">
+					<p>Copyright 2022, Maira Martini</p>
+					<p>Not for distribution.</p>
+					<licence target="https://creativecommons.org/">Creative Commons Attribuzione 4.0 Internazionale</licence>
+				</availability>
+			</publicationStmt>
+			<encodingDesc>
+				<projectDesc>
+					<p>Digitalizzazione eseguita ai fini della prova d'esame di Digital Humanities e patrimonio culturale, corso di laurea in Italianistica, Alma Mater Studiorum - Università di Bologna, a.a.2021-2022.</p>
+				</projectDesc>
+			</encodingDesc>
+			<sourceDesc>
+				<p>Transcribed from E.T.A Hoffmann's tale Der Sandmann</p>
+			</sourceDesc>
+		</fileDesc>
+	</teiHeader>
+	<text>
+		<body>
+			<p n="6">
+				 Im̄er höher wuchs mit der Neugierde, der Muth <lb/> auf irgend eine Weise des <persName>Sandmanns</persName> Bekantschaft zu machen. Ich <lb/><del>öff  schlich mich</del> schlich mich oft schnell aus dem <placeName>Kämnerchen</placeName> ausf den <lb/><placeName>Corridor</placeName>, wenn <persName>Mutter</persName> vorbeigegangen, aber nichts konte ich erlauschen, <lb/> denn im̄er war der <persName>Sandmann</persName> schon zur Thüre hinein, wenn ich den <lb/> Platz erreicht hatte, wo er mir sichtbar werden konte. Endlich beschloß ich <lb/><del><add place="margin">wie</add></del> von unwiderstehlicherm <del>Gewalt</del> <add place="above">Drange</add> getrieben mich im <placeName>Zim̄er</placeName> des <persName>Vaters</persName> <add place="above">selbst</add> zu <lb/>verbergen und dort den <persName>Sandmann</persName> zu erwarten.
+			</p>
+		</body>
+	</text>
+</TEI>

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<html lang="it">
+	
+	<head>
+		<!-- metadati -->
+		<meta charset="UTF-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+    <!-- metadati dc -->
+		  <meta name="DC.Title" content="Il mago sabbiolino">
+	    <meta name="DC.Creator" content="Maira Martini">
+	    <meta name="DC.Subject" content="Confronto fra le realizzazioni dell'uomo della sabbia">
+	    <meta name="DC.Description" content="Confronto fra le realizzazioni dell'uomo della sabbia e le successive trasposizioni multimediali">
+	    <meta name="DC.Publisher" content="Github">
+	    <meta name="DC.Date" content="Ottobre/Novembre 2022">
+	    <meta name="DC.Type" content="Sito web">
+	    <meta name="DC.Format" content="HTML/CSS/JS">
+	    <link rel="DC.Identifier" href="https://www.ilmagosabbiolino.github.io">
+	    <meta name="DC.Language" content="it">
+    	<link rel="DC.Coverage" href="http://vocab.getty.edu/page/tgn/7003127"> <!-- ID di Bologna -->
+    	<meta name="DC.Rights" content="https://creativecommons.org/share-your-work">
+		
+      <!-- Titolo della barra -->
+	   <title>Il mago sabbiolino</title>
+		
+      <!-- Favicon --> 
+	   <link rel="icon" type="image/x-icon" href="img/favicon.ico"/>
+		
+      <!-- Bootstrap CSS -->
+    	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+    
+      <!-- Bootstrap icons -->
+    	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    	
+      <!-- CSS esterno -->
+    	<link rel="stylesheet" type="text/css" href="index.css">
+	</head>
+
+	<!-- body -->
+	<body>
+  <!-- sfondo di tutto index -->
+    <section class="bg" alt="Dream. Protagonista di The Sandman, serie a fumetti scritta da Neil Gaiman e pubblicata dalla DC Comics."  title="Dream. Protagonista di The Sandman, serie a fumetti scritta da Neil Gaiman e pubblicata dalla DC Comics"></section>
+
+	<!-- header -->
+<header>
+<nav class="navbar  navbar-dark bg-dark fixed-top">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Il Mago Sabbiolino</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Esplora</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home <i class="bi bi-house-door"></i> 
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#introduzione">Introduzione</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Catalogo
+            </a>
+            <ul class="dropdown-menu dropdown-menu-dark">
+              <li><a class="dropdown-item" href="catalogo.htm">Collezione completa</a></li>
+                  <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Tempo</a></li>
+              <li><a class="dropdown-item" href="persona.htm">Persone</a></li>
+              <li><a class="dropdown-item" href="#">Tipologia</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#info"><i class="bi bi-info-circle"></i>
+            </a>
+          </li>
+        </ul>
+        <form class="d-flex mt-3" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-primary" type="submit">Go</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</nav>
+</header>
+
+  <!-- main -->
+  <!-- progetto -->
+<div class="container-fluid text-center mt-3" id="introduzione">
+	<div class="row">
+      <div class="content">
+			<h2>About - Introduzione al progetto</h2>
+			<p>Il progetto si pone l'obettivo primario di catalogare, metadatare, preservare e valorizzare i diversi item multimediali relativi alle differenti riscritture e trasposizioni multimediali dell'Omino del sonno, un personaggio mitico-folklorico del Nord Europa. In particolare, vengono prese a oggetto di studio le interpretazioni di E.T.A. Hoffmann e H.C. Andersen i quali, pur partendo dalla medesima figura mitologica, ne conferiscono esiti diametralmente opposti. Gli oggetti multimediali qui raccolti comprendono le fiabe dei due autori sopracitati, un audiolibro, un cortometraggio animato e alcune incisioni. In aggiunta, un apparato critico che permetta una conoscenza più completa di questo controverso personaggio letterario.</p>
+      <p> 
+        <a class="btn btn-primary" href="catalogo.htm" role="button" title="Vai al catalogo!" >Scopri di più</a>
+      </p>
+		</div>
+	</div>
+</div>
+
+<!--footer-->
+<footer>
+  <div class= "container-fluid " id="info">
+    <div class="row">
+    <div class="col-md-4 text-start">Il sito web <em>Il Mago Sabbiolino</em> è stato realizzato nell'autunno 2022 per la prova d'esame del corso <a class="digitalhumanitiesepatrimonioculturale" href="https://www.unibo.it/it/didattica/insegnamenti/insegnamento/2021/423307" target="_blank">Digital Humanities e patrimonio culturale</a>, tenuto dalla Prof.ssa Francesca Tomasi, presso l'Alma Mater Studiorum - Università di Bologna, corso di Laurea in <a class="italianistica" href="https://corsi.unibo.it/magistrale/ItalianisticaCultureLetterarieLinguistica" target="_blank">Italianistica</a>.
+      </div> 
+      <div class="col-md-4 text-center mt-3">
+        <a href="https://www.unibo.it/it/" target="_blank">
+        <img src="img/logo.jpg" alt="Logo Alma Mater Studiorum - Università di Bologna" title="Logo Alma Mater Studiorum - Università di Bologna"/>
+      </a>
+      </div>
+      <div class="col-md-4">
+          <h5 class="text-end"><b>Contatti</b></h5>
+          <ul class="list-unstyled text-end">                                       
+            <li><a class="licenza" href="http://creativecommons.org/licenses/by/4.0/" target="_blank"
+                title="Licenza Creative Commons"><img alt="Licenza Creative Commons" style="width: 60px;" src="https://i.creativecommons.org/l/by/4.0/88x31.png"/></a></li>
+                <li>&copy; Maira Martini</a></li>
+                <li><i class="bi bi-envelope"></i> Contattami per suggerimenti e informazioni! <a class="scrivimi" href="mailto:maira.martini@studio.unibo.it" target="_blank">maira.martini@studio.unibo.it</a></li>
+                <a href="https://www.facebook.com/maira.martini.9/" target="_blank"><i class="bi bi-facebook"></i></a>
+                <a href="https://www.instagram.com/accounts/login/" target="_blank"><i class="bi bi-instagram"></i></a>
+            </ul>
+      </div>
+      </div>
+  </div>
+</footer>
+
+<!-- Bootstrap js -->
+<script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

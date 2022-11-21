@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html>
+<html lang="it">
+	
+	<head>
+		<!-- metadati -->
+		<meta charset="UTF-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+      <!-- Titolo della barra -->
+	   <title>Il mago sabbiolino</title>
+		
+      <!-- Favicon --> 
+	   <link rel="icon" type="image/x-icon" href="img/favicon.ico"/>
+		
+      <!-- Bootstrap CSS -->
+    	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+    
+      <!-- Bootstrap icons -->
+    	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    	
+      <!-- CSS esterno -->
+    	<link rel="stylesheet" type="text/css" href="persona.css">
+	</head>
+
+<body>
+<header>
+<nav class="navbar  navbar-dark bg-dark fixed-top">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="index.htm">Il Mago Sabbiolino</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Esplora</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.htm">Home <i class="bi bi-house-door"></i> 
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.htm">Introduzione</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Catalogo
+            </a>
+            <ul class="dropdown-menu dropdown-menu-dark">
+              <li><a class="dropdown-item" id="collezione">Collezione completa</a></li>
+                  <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Tempo</a></li>
+              <li><a class="dropdown-item" href="persona.htm">Persone</a></li>
+              <li><a class="dropdown-item" href="#">Tipologia</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.htm"><i class="bi bi-info-circle"></i>
+            </a>
+          </li>
+        </ul>
+        <form class="d-flex mt-3" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-primary" type="submit">Go</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="index.htm">Home</a></li>
+    <li class="breadcrumb-item"><a href="catalogo.htm">Collezione completa</a></li>
+    <li class="breadcrumb-item"><a href="item.htm">Item</a></li>
+    <li class="breadcrumb-item active" aria-current="page">Pagina persona</li>
+  </ol>
+</nav>
+</nav>
+</header>
+
+<main>
+<div class="container-fluid">
+		<div class="row">
+ 
+		<!-- aside --> 
+		<div class="col-md-2 col-sm-2 col-xs-12 mt-4">
+          <aside>
+            
+            <!-- altri strumenti per esplorare il catalogo -->
+            <div class="container pb-3 mb-3 aside">
+              <h5><i class="bi bi-funnel"></i> Filtra la collezione:</h5>
+              <button class="btn btn-outline-primary mt-1"><i class="bi bi-arrow-right-short"></i> Tempo</button>
+              <button class="btn btn-outline-primary mt-1"><i class="bi bi-arrow-right-short"></i> Persone</button>
+              <div class="btn-group">
+         	  <button type="button" class="btn btn-outline-primary mt-1"><i class="bi bi-arrow-right-short"></i> Tipologia</button>
+              <button type="button" class="btn btn-outline-primary dropdown-toggle dropdown-toggle-split mt-1" data-bs-toggle="dropdown" aria-expanded="false"><span class="visually-hidden">Toggle Dropdown</span></button>
+       			 <ul class="dropdown-menu">
+          			<li><a class="dropdown-item" href="#">Immagini</a></li>
+         		 	<li><a class="dropdown-item" href="#">Manoscritti</a></li>
+          			<li><a class="dropdown-item" href="#">Video</a></li>
+          			<li><hr class="dropdown-divider"></li>
+          			<li><a class="dropdown-item" href="#">Altri file</a></li>
+        		</ul>
+      		  </div>
+            </div>
+            
+            <!-- linea divisoria -->
+            <div class="dropdown-divider" style="border-color: #121254;"></div>
+            
+            <!-- items correlati 1 -->
+         <div class="container mt-3 pb-3 mb-3 aside">
+              <h5><i class="bi bi-lightbulb"></i> Items correlati:</h5><br/>
+				<div class="card h-100" style="width: 11rem;">
+					<a href="https://it.wikipedia.org/wiki/La_sirenetta" target="_blank">
+					<img src="img/mermaid.jpg" class="card-img-top" alt="sirenetta"/></a>
+					<div class="card-body">
+						<h5 class="card-title"><em>La Sirenetta</em></h5>
+						<p class="card-text"><em>La Sirenetta</em> è una celebre fiaba dello scrittore danese Hans Christian Andersen, pubblicata per la prima volta nel 1837.</p>
+						<a href="https://it.wikipedia.org/wiki/La_sirenetta" target="_blank" class="btn btn-outline-primary">Scopri di più!</a>
+					</div>
+				</div>
+
+			<!-- linea divisoria -->
+            <div class="dropdown-divider mt-4 mb-4" style="border-color: #121254;"></div>
+ 
+            <!-- items correlati 2 -->
+				<div class="card h-100" style="width: 11rem;">
+					<a href="https://kalliope.org/en/work/andersen/1830" target="_blank">
+					<img src="img/poesie.jpg" class="card-img-top" alt="poesie"/></a>
+					<div class="card-body">
+						<h5 class="card-title"><em>Digte</em> (1830)</h5>
+						<p class="card-text"><em>Digte</em> è una raccolta di poesie scrittore danese Hans Christian Andersen pubblicata del 1830.</p>
+						<a href="https://kalliope.org/en/work/andersen/1830" target="_blank" class="btn btn-outline-primary">Scopri di più!</a>
+					</div>
+				</div>
+			</aside>
+		</div>
+
+<!-- persona --> 
+<div class="col-md-8 col-sm-8 col-xs-12" id="su">
+          <div class="row">
+          	<div class="card text-center mb-5">
+          		<h1><i class="bi bi-person-bounding-box"></i> <em>Andersen, Hans Christian</em></h1><br/>
+          		<a href="https://it.wikipedia.org/wiki/Hans_Christian_Andersen#/media/File:HCA_by_Thora_Hallager_1869.jpg" target="_blank" alt="Andersen fotografato da Thora Hallager nel 1869" title="Andersen fotografato da Thora Hallager nel 1869"><img src="img/foto-ahc.jpg" width="700" height="800"/></a>
+          		<br/><i class="bi bi-share-fill"></i>
+			<div class="card-body text-center mt-3">
+				<p><strong>Introduzione</strong>: Hans Christian Andersen (Odense, 2 aprile 1805 – Copenaghen, 4 agosto 1875) è stato uno scrittore e poeta danese, celebre soprattutto per le sue fiabe. Tra le sue opere più note vi sono <em>La principessa sul pisello</em> (1835), <em>Mignolina</em> (1835), <em>La sirenetta</em> (1837), <em>I vestiti nuovi dell'imperatore</em> (1837), <em>Il soldatino di stagno</em> (1838), <em>Il brutto anatroccolo</em> (1843), <em>La regina delle nevi</em> (1844) e <em>La piccola fiammiferaia</em> (1848). <sup><a href="https://it.wikipedia.org/wiki/Hans_Christian_Andersen" target="_blank">Wikipedia</sup></a></p>
+				<hr/>
+				 <table class="table">
+					  <tbody>
+					    <tr>
+					      <th scope="row">Cognome e nome:</th>
+					      <td><a href="https://viaf.org/viaf/4925902/" target="_blank">Andersen, Hans Christian<sup>VIAF</sup></a></td>
+					    </tr>
+					    <tr>
+					      <th scope="row">Nazionalità:</th>
+					      <td>Danese</td>					      
+					    </tr>
+					    <tr>
+					      <th scope="row">Data di nascita:</th>
+					      <td>2 Aprile 1805</td>
+					      <td><button type="button" class="btn btn-outline-primary btn-sm">Vedi in Date</button></td>
+					    </tr>
+					    <tr>
+					      <th scope="row">Luogo di nascita:</th>
+					      <td><a href="https://www.geonames.org/2615876/odense.html" target="_blank"> Odense <sup>GeoNames</sup></a></td>
+					      <td><a href="https://www.geonames.org/2615876/odense.html" target="_blank"><button type="button" class="btn btn-outline-primary btn-sm">Vedi in Luoghi</button></a></td>
+					    </tr>
+					    <tr>
+					      <th scope="row">Data di morte:</th>
+					      <td>4 Agosto 1875</td>
+					      <td><button type="button" class="btn btn-outline-primary btn-sm">Vedi in Date</button></td>
+					    </tr>
+					    <tr>
+					      <th scope="row">Luogo di morte:</th>
+					      <td><a href="https://www.geonames.org/2618425/copenhagen.html" target="_blank"> Copenhagen <sup>GeoNames</sup></a></td>
+					      <td><a href="https://www.geonames.org/2618425/copenhagen.html" target="_blank"><button type="button" class="btn btn-outline-primary btn-sm">Vedi in Luoghi</button></a></td>
+					    </tr>
+					    <tr>
+					      <th scope="row">Attività:</th>
+					      <td>Scrittore e poeta</td>
+					    </tr>
+					    <tr>
+					      <th scope="row">Pagina Wikipedia:</th>
+					      <td><a href="https://it.wikipedia.org/wiki/Hans_Christian_Andersen" target="_blank">Hans Christian Andersen</a></td>
+					    </tr>
+					    <tr>
+					      <th scope="row">Controllo di autorità:</th>
+					      <td>
+					      	<ul>
+					      		<li><a href="https://viaf.org/viaf/4925902/" target="_blank">4925902<sup>VIAF</sup></a></li>
+					      		<li><a href="https://isni.oclc.org/xslt/DB=1.2//CMD?ACT=SRCH&IKT=8006&TRM=ISN%3A0000000121184353&TERMS_OF_USE_AGREED=Y&terms_of_use_agree=send&COOKIE=U51,KENDUSER,I28,B0028++++++,SY,NISNI,D1.2,Eca34a2dc-40,A,H1,,3-28,,30-41,,43-59,,65-70,,74-75,R37.160.167.187,FY" target="_blank">0000 0001 2118 4353<sup>ISNI</sup></a></li>
+					      		<li><a href="https://opac.sbn.it/risultati-autori/-/opac-autori/detail/CFIV006256?core=autoriall" target="_blank">CFIV006256<sup>SBN</sup></a></li>
+					      		<li><a href="https://opac.vatlib.it/auth/detail/495_40499" target="_blank">495/40499<sup>BAV</sup></a></li>
+					      		<li><a href="https://data.cerl.org/thesaurus/cnp00394063" target="_blank">cnp00394063<sup>CERL</sup></a></li>
+					      		<li><a href="https://www.europeana.eu/it/collections/person/60027-hans-christian-andersen" target="_blank">agent/base/60027<sup>Euopeana</sup></a></li>
+					      		<li><a href="https://www.getty.edu/vow/ULANFullDisplay?find=&role=&nation=&subjectid=500130208" target="_blank">500130208<sup>ULAN</sup></a></li>
+					      		<li><a href="https://id.loc.gov/authorities/names/n79022941.html" target="_blank">n79022941<sup>LCCN</sup></a></li>
+					      		<li><a href="https://portal.dnb.de/opac.htm?method=simpleSearch&cqlMode=true&query=nid%3D118502794" target="_blank">118502794<sup>GND</sup></a></li>
+					      		<li><a href="http://catalogo.bne.es/uhtbin/authoritybrowse.cgi?action=display&authority_id=XX1154847" target="_blank">XX1154847<sup>BNE</sup></a></li>
+					      		<li><a href="https://catalogue.bnf.fr/ark:/12148/cb11888753s" target="_blank">cb11888753s<sup>BNF</sup></a></li>
+					      		<li><a href="http://uli.nli.org.il/F/?func=find-b&local_base=NLX10&find_code=UID&request=987007257617505171" target="_blank">5987007257617505171<sup>J9U</sup></a></li>
+					      		<li><a href="https://katalog.nsk.hr/F/?func=direct&local_base=nsk10&doc_number=000000694" target="_blank">000000694<sup>NSK</sup></a></li>
+					      		<li><a href="https://id.ndl.go.jp/auth/ndlna/00431436" target="_blank">00431436<sup>NDL</sup></a></li>
+								<li><a href="https://plus.cobiss.net/cobiss/si/sl/conor/6171491" target="_blank">6171491<sup>CONOR. SI</sup></a></li>
+								<li><a href="https://www.worldcat.org/identities/lccn-n79022941" target="_blank">lccn-n79022941<sup>WorldCat Identities</sup></a></li>
+					      	</ul>
+					 	  </td>				      
+					    </tr>
+					    <tr>
+					      <th scope="row">Tema:</th>
+					      <td><i class="bi bi-bookmark-heart"> Fiabe</i> <i class="bi bi-bookmark-heart"> Poesie</i> <i class="bi bi-bookmark-heart"> Mago Sabbiolino</i> <i class="bi bi-bookmark-heart"> Sogno</i></td>
+					    </tr>
+						</div>
+					 </tbody>
+				</table>
+			</div>
+			</div>
+		</div>
+	</div>
+
+<!-- aside di dx -->
+<div class="col-md-2 col-sm-2 col-xs-12 mt-4">
+	<aside>
+		<a href="#"><div class="text-end"><i class="bi bi-question-circle"></i> Guida</div></a>
+
+		<!-- linea divisoria  -->
+    	<div class="dropdown-divider mt-4" style="border-color: #121254;"></div>
+
+    	<!-- suggerimento 1 -->
+	    <div class="container pt-3 pb-3 aside text-start">
+	      <h5><i class="bi bi-film"></i> I nostri suggerimenti multimediali:</h5><br/>
+				<div class="card h-100" style="width: 11rem;">
+					<a href="https://www.disneyplus.com/it-it/movies/la-sirenetta/5MpPFhS8FTXh" target="_blank">
+					<img src="img/sirenetta.jpg" class="card-img-top" alt="cartone"/></a>
+					<div class="card-body">
+						<h5 class="card-title"><em>La Sirenetta</em></h5>
+						<p class="card-text"><em>La Sirenetta</em> (1989) è un è un film d'animazione prodotto da Walt Disney Feature Animation e diretto da Ron Clements e John Musker, basato sull'omonima fiaba di Hans Christian Andersen.</p>
+						<a href="https://www.youtube.com/watch?v=2Hz3QB31K_c" class="btn btn-outline-primary">Guarda il cartone!</a>
+					</div>
+				</div>
+			</aside>
+		</div>
+	</div>
+</main>
+
+
+
+
+<section class="container-fluid" title="Torna su">
+ <p align="center"><a href="#su" class="linktornasu"><i class="bi bi-arrow-up-circle"></i></a></p>
+</section>
+
+<!-- footer -->
+<hr>
+<footer>
+  <div class= "container-fluid bg-light" id="info">
+    <div class="row">
+    <div class="col-md-4 text-start">Il sito web <em>Il Mago Sabbiolino</em> è stato realizzato nell'autunno 2022 per la prova d'esame del corso <a class="digitalhumanitiesepatrimonioculturale" href="https://www.unibo.it/it/didattica/insegnamenti/insegnamento/2021/423307" target="_blank">Digital Humanities e patrimonio culturale</a>, tenuto dalla Prof.ssa Francesca Tomasi, presso l'Alma Mater Studiorum - Università di Bologna, corso di Laurea in <a class="italianistica" href="https://corsi.unibo.it/magistrale/ItalianisticaCultureLetterarieLinguistica" target="_blank">Italianistica</a>.
+      </div> 
+      <div class="col-md-4 text-center mt-3">
+        <a href="https://www.unibo.it/it/" target="_blank">
+        <img src="img/logo.jpg" alt="Logo Alma Mater Studiorum - Università di Bologna" title="Logo Alma Mater Studiorum - Università di Bologna"/>
+      </a>
+      </div>
+      <div class="col-md-4">
+          <h5 class="text-end"><b>Contatti</b></h5>
+          <ul class="list-unstyled text-end">                                       
+            <li><a class="licenza" href="http://creativecommons.org/licenses/by/4.0/" target="_blank"
+                title="Licenza Creative Commons"><img alt="Licenza Creative Commons" style="width: 60px;" src="https://i.creativecommons.org/l/by/4.0/88x31.png"/></a></li>
+                <li>&copy; Maira Martini</a></li>
+                <li><i class="bi bi-envelope"></i> Contattami per suggerimenti e informazioni! <a class="scrivimi" href="mailto:maira.martini@studio.unibo.it" target="_blank">maira.martini@studio.unibo.it</a></li>
+                <a href="https://www.facebook.com/maira.martini.9/" target="_blank"><i class="bi bi-facebook"></i></a>
+                <a href="https://www.instagram.com/accounts/login/" target="_blank"><i class="bi bi-instagram"></i></a>
+            </ul>
+      </div>
+      </div>
+  </div>
+</footer>
+
+<!-- Bootstrap js -->
+<script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

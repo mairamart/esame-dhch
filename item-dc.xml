@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<collection xmlns:dc="http://purl.org/dc/elements/1.1/" xml:id="Il Mago Sabbiolino">
+	<item xml:id="Manoscritto Ole Lukøje" n="1">
+		<dc:identifier>C:/Users/maira/Desktop/esame-dh/item.htm</dc:identifier>
+		<dc:title>Manoscritto Ole Lukøje</dc:title>
+		<genere>Fiaba</genere>
+	<dc:description>
+		<img source="img/manoscritto-ole.jpg"/>
+		<work>Ole Lukøje</work> (Trad. it. Ole Chiudigliocchi) è una fiaba per bambini scritta da <person>Hans Christian Andersen</person> e presente all'interno di <work>Eventyr, fortalte for Børn. Ny Samling. Tredie Hefte.</work> <date>(1842)</date> (Trad. it. <work>Fiabe raccontate ai bambini. Nuova raccolta. Terzo tomo.</work>) Ole Lukøje è un mago, un personaggio fiabesco che concilia il sonno dei bambini spruzzando, attraverso la sua siringa magica, del latte nei loro occhi e soffiando dolcemente dietro al loro collo. Arriva silenziosamente, salendo le scale senza le scarpette, in modo da non spaventare i bambini. Una volta addormentati, Ole Lukøje si siede in fondo al loro letto e inizia a raccontare delle storie, facendo uso di due ombrelli: uno pieno di figure, che viene usato con i "bambini buoni" per fare sognare loro cose belle; uno che, invece, non ha niente, usato con i "bambini cattivi" per non farli sognare e farli svegliare confusi. La fiaba di <person>Andersen</person> racconta dell'incontro fra Ole e un bambino di nome Hjalmar che, per una settimana, ascolta le favole raccontategli dal Mago.
+	</dc:description>
+	<metadati>
+		<dc:title>Ole Lukøje</dc:title> 									
+		<dc:creator ref="https://viaf.org/viaf/4925902/">Hans Christian Andersen</dc:creator>
+		<dc:date>1842</dc:date>	
+		<dc:identifier tipo="permalink">http://www5.kb.dk/permalink/2006/manus/128/dan/1/</dc:identifier>
+		<dc:subject>Ole Lukøje</dc:subject>
+		<dc:language>dan</dc:language>
+		<dc:type>Book</dc:type>    
+		<dc:type>Manuscript</dc:type>
+		<dc:format>8 folios; paper;  22 x 26,5 cm</dc:format>
+		<dc:provenance>Det Kongelige Bibliotek</dc:provenance>
+		<dc:source xml:id="KB">Det Kongelige Bibliotek</dc:source>	
+	</metadati>
+	</item>
+</collection>

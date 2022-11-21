@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html>
+<html lang="it">
+
+<head>
+<!-- metadati -->
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Titolo della barra -->
+<title>Il mago sabbiolino</title>
+		
+<!-- Favicon --> 
+<link rel="icon" type="image/x-icon" href="img/favicon.ico"/>
+		
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+    	
+<!-- Bootstrap icons -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    	
+<!-- CSS esterno -->
+<link rel="stylesheet" type="text/css" href="catalogo.css">
+</head>
+
+
+<body>
+<header>
+<nav class="navbar  navbar-dark bg-dark fixed-top">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="index.htm">Il Mago Sabbiolino</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Esplora</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.htm">Home <i class="bi bi-house-door"></i> 
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.htm">Introduzione</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Catalogo
+            </a>
+            <ul class="dropdown-menu dropdown-menu-dark">
+              <li><a class="dropdown-item" id="collezione">Collezione completa</a></li>
+                  <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Tempo</a></li>
+              <li><a class="dropdown-item" href="persona.htm">Persone</a></li>
+              <li><a class="dropdown-item" href="#">Tipologia</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.htm"><i class="bi bi-info-circle"></i>
+            </a>
+          </li>
+        </ul>
+        <form class="d-flex mt-3" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-primary" type="submit">Go</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="index.htm">Home</a></li>
+    <li class="breadcrumb-item"><a href="catalogo.htm">Collezione completa</a></li>
+    <li class="breadcrumb-item active" aria-current="page">Item</li>
+  </ol>
+</nav>
+</nav>
+</header>
+
+<main>
+	<div class="container-fluid">
+		<div class="row">
+ 
+		<!-- aside --> 
+		<div class="col-md-2 col-sm-2 col-xs-12 mt-4">
+          <aside>
+            
+            <!-- altri strumenti per esplorare il catalogo -->
+            <div class="container pb-3 mb-3 aside">
+              <h5><i class="bi bi-funnel"></i> Filtra la collezione:</h5>
+              <button class="btn btn-outline-primary mt-1"><i class="bi bi-arrow-right-short"></i> Tempo</button>
+              <a href="persona.htm" target="_blank"><button class="btn btn-outline-primary mt-1"><i class="bi bi-arrow-right-short"></i> Persone</button></a>
+              <div class="btn-group">
+         	  <button type="button" class="btn btn-outline-primary mt-1"><i class="bi bi-arrow-right-short"></i> Tipologia</button>
+              <button type="button" class="btn btn-outline-primary dropdown-toggle dropdown-toggle-split mt-1" data-bs-toggle="dropdown" aria-expanded="false"><span class="visually-hidden">Toggle Dropdown</span></button>
+       			 <ul class="dropdown-menu">
+          			<li><a class="dropdown-item" href="#">Immagini</a></li>
+         		 	<li><a class="dropdown-item" href="#">Manoscritti</a></li>
+          			<li><a class="dropdown-item" href="#">Video</a></li>
+          			<li><hr class="dropdown-divider"></li>
+          			<li><a class="dropdown-item" href="#">Altri file</a></li>
+        		</ul>
+      		  </div>
+            </div>
+            
+            <!-- linea divisoria -->
+            <div class="dropdown-divider" style="border-color: #121254;"></div>
+          
+            <!-- items correlati 1 -->
+            <div class="container mt-3 pb-3 mb-3 aside">
+              <h5><i class="bi bi-lightbulb"></i> Items correlati:</h5><br/>      		
+				<div class="card h-100" style="width: 11rem;">
+					<div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+		          <div class="carousel-indicators">
+		            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+		            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+		          </div>
+		          <div class="carousel-inner">
+		            <div class="carousel-item active" data-bs-interval="10000">
+		              <a href="https://linguabooster.com/it/it/books/sandmann-2#page-4" target="_blank">
+		              <img src="img/testo-hoffmann-it.png" class="d-block w-100" alt="Testo Hoffmann It"/></a>
+		              <div class="carousel-caption d-none d-md-block"></div>
+		            </div>
+		            <div class="carousel-item" data-bs-interval="2000">
+		              <a href="https://www.researchgate.net/publication/338014200_Der_Sandmann_The_Sandman_By_ETA_Hoffmann_translated_by_Jolyon_Timothy_Hughes" target="_blank">
+		              <img src="img/testo-hoffmann-de.png" class="d-block w-100" alt="Testo Hoffmann De"/></a>
+		              <div class="carousel-caption d-none d-md-block"></div>
+		            </div>
+		          </div>
+		          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+		            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+		            <span class="visually-hidden">Previous</span>
+		          </button>
+		          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+		            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+		            <span class="visually-hidden">Next</span>
+		          </button>
+		        </div>
+						<div class="card-body">
+							<h5 class="card-title">Testo <em>Der Sandmann</em></h5>
+							<p class="card-text">Leggi il racconto di Hoffmann online, lo puoi trovare in italiano e in lingua originale.</p>
+							<a href="#" class="btn btn-outline-primary">Leggi i testi!</a>
+						</div>
+					</div>
+
+
+			<!-- linea divisoria -->
+            <div class="dropdown-divider mt-4" style="border-color: #121254;"></div>
+
+			<!-- items correlati 2 -->
+					<div class="card h-100 mt-3" style="width: 11rem;">
+					<div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+			          <div class="carousel-indicators">
+			            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+			            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2">
+			            </button>
+			          </div>
+			          <div class="carousel-inner">
+			            <div class="carousel-item active" data-bs-interval="10000">
+			              <a href="http://www.paroledautore.net/fiabe/classiche/andersen/ole.htm" target="_blank">
+			              <img src="img/testo-andersen-it.png" class="d-block w-100" alt="Testo Andersen It"/></a>
+			              <div class="carousel-caption d-none d-md-block"></div>
+			            </div>
+			            <div class="carousel-item" data-bs-interval="2000">
+			              <a href="https://tekster.kb.dk/text/adl-texts-hcaeventyr01val-shoot-workid77542" target="_blank">
+			              <img src="img/testo-andersen-dan.png" class="d-block w-100" alt="Testo Andersen Dan"/></a>
+			              <div class="carousel-caption d-none d-md-block"></div>
+			            </div>
+			          </div>
+			          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+			            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+			            <span class="visually-hidden">Previous</span>
+			          </button>
+			          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+			            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+			            <span class="visually-hidden">Next</span>
+			          </button>
+			        </div>
+					<div class="card-body">
+						<h5 class="card-title">Testo <em>Ole Lukøje</em></h5>
+						<p class="card-text">Leggi la fiaba di Andersen online, lo puoi trovare in italiano e in lingua originale.</p>
+						<a href="#" class="btn btn-outline-primary">Leggi i testi!</a>
+					</div>
+				</div>
+            </div>
+     	   </aside>
+        </div>
+
+ <!-- item 1 --> 
+ 
+        <div class="col-md-8 col-sm-8 col-xs-12" id="su">
+          <div class="row">
+          	<div class="card text-center mb-5">
+          		<h1>Manoscritto <em>Ole Lukøje</em></h1><br/>
+          		<a href="http://www5.kb.dk/permalink/2006/manus/128/dan/1/" target="_blank" alt="Manoscritto Ole Lukøje" title="Manoscritto Ole Lukøje"><img src="img/manoscritto-ole.jpg" width="500" height="500"/></a>
+          		<br/><i class="bi bi-download"></i>
+          		<div class="card-body mt-3">
+          			<p><em>Ole Lukøje</em> (Trad. it. <em>Ole Chiudigliocchi</em>) è una <strong>fiaba per bambini</strong> scritta da <strong>Hans Christian Andersen</strong> e presente all'interno di <em>Eventyr, fortalte for Børn. Ny Samling. Tredie Hefte. (1842)</em> (Trad. it. <em>Fiabe raccontate ai bambini. Nuova raccolta. Terzo tomo.</em>)
+          			<br/>
+          			Ole Lukøje è un mago, un personaggio fiabesco che concilia il sonno dei bambini spruzzando, attraverso la sua <strong>siringa magica</strong>, del <strong>latte nei loro occhi</strong> e soffiando dolcemente dietro al loro collo. Arriva silenziosamente, salendo le scale senza le scarpette, in modo da <strong>non spaventare i bambini</strong>. Una volta addormentati, Ole Lukøje si siede in fondo al loro letto e inizia a raccontare delle storie, facendo uso di <strong>due ombrelli</strong>: uno pieno di figure, che viene usato con i "bambini buoni" per fare sognare loro cose belle; uno che, invece, non ha niente, usato con i "bambini cattivi" per non farli sognare e farli svegliare confusi. La fiaba di Andersen racconta dell'incontro fra Ole e un bambino di nome Hjalmar che, per una settimana, ascolta le favole raccontategli dal Mago.</p>
+          		</div>
+
+          	<!-- metadati -->
+          		<div class="card-body">
+          			<p class="card-text"><span><em>Autore:</em></span> <a class="link" href="https://viaf.org/viaf/4925902/" target="_blank" alt="Identificativo VIAF Andersen, Hans Christian" title="Identificativo VIAF Andersen, Hans Christian"><strong>Andersen, Hans Christian<sup>VIAF</sup></strong></a></p>
+                      <hr/>
+                      <p class="card-text"><span><em>Data:</em></span> <strong>1842</strong></p>
+                      <hr/>
+                      <p class="card-text"><span><em>Topic:</em></span> <strong>Fiabe per bambini, Raccolta di fiabe, Mago sabbiolino</strong></p>
+                      <hr/>
+                      <p class="card-text"><span><em>Lingua:</em></span> <strong>Danese</strong></p>
+                      <hr/>
+                      <p class="card-text"><span><em>Titolo:</em></span> <strong>Ole Lukøje</strong></p>
+                      <hr/>
+                      <p class="card-text"><span><em>Luogo:</em></span> <strong>Danimarca</strong></p>
+                      <hr/>
+          		</div>	
+          	</div>
+          	<hr/>
+
+		<!-- item 2 -->
+			<div class="card text-center mt-4 mb-5">
+          		<h1>Manoscritto <em>Der Sandmann</em></h1><br/>
+          		<a href="https://www.berliner-intellektuelle.eu/scans/p0185/XV_532_0007.jpg" target="_blank" alt="Manoscritto Der Sandmann" title="Manoscritto Der Sandmann"><img src="img/XV_532_0007.jpg" width="500" height="500"/></a>
+          		<br/><i class="bi bi-download"></i>
+          		<div class="card-body mt-3">
+          			<p><em>Der Sandmann</em> (Trad. it. <em>Il Mago Sabbiolino</em>) è un complesso <strong>racconto dell'orrore</strong> scritto da <strong>Ernst Theodor Amadeus Hoffmann</strong> e inserito nella raccolta <em>Nachtstücke</em> (1815). (Trad. it. <em>Notturni</em>)
+          			<br/>
+          			Il racconto si apre in <strong>forma epistolare</strong>, attraverso lo scambio di lettere fra <strong>Nathanael</strong> - il protagonista - e Lotario, un amico. In queste lettere veniamo a conoscenza di alcuni fatti legati alla sua infanzia: Nathanael ricorda di come sua madre lo esortasse ad andare a letto presto, altrimenti l’Uomo della sabbia avrebbe salito le scale, fino camera sua, per <strong>strappargli gli occhi</strong> e <strong>darli in pasto ai propri figli</strong>. Spaventato a vita da questa immagine, Nathanael identifica il mostro nella figura di un amico di famiglia: <strong>Coppelius</strong>, un avvocato che assieme al padre eseguiva degli esperimenti di alchimia. La figura orrida e spaventosa di Coppelius accompagnerà Nathanael per tutta la vita, anche sottoforma di altre identità (come l'ottico piemontese di nome <strong>Giuseppe Coppola</strong>). Ossessionato dalla presenza del Mago e a seguito di un avvenimento che fa rinchiudere Nathanael in manicomio (cfr. episodio dell'<strong>automa</strong>), il ragazzo impazzisce nuovamente a causa di Coppola/Coppelius e, questa volta, si getta da una torre e <strong>muore</strong>.</p>
+          		</div>
+
+          	<!-- metadati -->
+          		<div class="card-body">
+          			<p class="card-text"><span><em>Autore:</em></span> <a class="link" href="https://viaf.org/viaf/29535422/" target="_blank" alt="Identificativo VIAF Hoffmann, E.T.A." title="Identificativo VIAF Hoffmann, E.T.A."><strong>Hoffmann, E.T.A. <sup>VIAF</sup></strong></a></p>
+                      <hr/>
+                      <p class="card-text"><span><em>Data:</em></span> <strong>1815</strong></p>
+                      <hr/>
+                      <p class="card-text"><span><em>Topic:</em></span> <strong>Racconto dell'orrore, Mago sabbiolino, gotico, automa</strong></p>
+                      <hr/>
+                      <p class="card-text"><span><em>Lingua:</em></span> <strong>Tedesco</strong></p>
+                      <hr/>
+                      <p class="card-text"><span><em>Titolo:</em></span> <strong>Der Sandmann</strong></p>
+                      <hr/>
+                      <p class="card-text"><span><em>Luogo:</em></span> <strong>Germania</strong></p>
+                      <hr/>
+          		</div>	
+          	</div>
+          	<hr/>
+
+<!-- tabella di cfr -->
+          		<section class="text-center mb-3">
+          			<h2>Hoffmann <em>vs</em> Andersen - Tabella di confronto*</h2>
+					<h7>* Vengono citati solo estratti di testi in <strong>via esemplificativa</strong></h7></section>
+          		<table class="table table-hover table-bordered border-dark">
+				  <thead>
+				    <tr>
+				      <th scope="col"></th>
+				      <th scope="col">Hoffmann<div class="d-grid gap-2 d-md-flex justify-content-md-end"><button class="btn btn-outline-primary me-md-1 btn-sm" type="button">Vai alla pagina persona</button></div></th>
+				      <th scope="col">Andersen<div class="d-grid gap-2 d-md-flex justify-content-md-end"><a href="persona.htm" target="_blank" title="Vai alla pagina di Andersen, Hans Christian" alt="Vai alla pagina persona"><button class="btn btn-outline-primary me-md-1 btn-sm" type="button">Vai alla pagina persona</button></a></div></th>
+				    </tr>
+				  </thead>
+				  <tbody>
+				    <tr>
+				      <th scope="row">Protagonisti:</th>
+				      <td>Coppelius/Coppola; Nataniel</td>
+				      <td>Ole Chiudigliocchi; Hjalmar</td>
+				    </tr>
+				    <tr>
+				      <th scope="row">Luogo:</th>
+				      <td>Non definito</td>
+				      <td>Non definito</td>
+				    </tr>
+				    <tr>
+				      <th scope="row">Tempo:</th>
+				      <td>Arco di svariati anni</td>
+				      <td>Una settimana</td>
+				    </tr>
+				    <tr>
+				      <th scope="row">Narratore:</th>
+				      <td>Prima persona/Terza persona</td>
+				      <td>Terza persona</td>
+				    </tr>
+				    <tr>
+				      <th scope="row">Genere:</th>
+				      <td>Racconto</td>
+				      <td>Fiaba</td>
+				    </tr>
+				    <tr>
+				      <th scope="row">Sottogenere:</th>
+				      <td>Horror, gotico</td>
+				      <td>Fiaba per bambini</td>
+				    </tr>
+				    <tr>
+				      <th scope="row">Aspetto fisico del Mago:</th>
+				      <td>
+				      	<ul>
+					      <li>Figura mostruosa;</li>
+					      <li>Uomo alto, spalle larghe;</li>
+					      <li>Grossa testa informe;</li>
+					      <li>Viso terrero;</li>
+					      <li>Occhi da gatto verdastri e pungenti;</li>
+					      <li>Bocca si torce, sorriso malvagio;</li>
+					      <li>Mani pelose e nodose;</li>
+					      <li>Il suo aspetto era stomachevole e odioso;</li>
+			      		</ul>
+			      	  </td>
+				      <td>/</td>
+				    </tr>
+				    <tr>
+				      <th scope="row">Abbigliamento del Mago:</th>
+				      <td>
+				      	<ul>
+				      		<li>Giacca color cenere di taglio antiquato;</li>
+				      		<li>Panciotto e i calzoni dello stesso colore</li>
+				      		<li>Piccola parrucca </li>
+				      		<li>Cravatta pieghettata.</li>
+				      		<li>Scarpe con piccole fibbie;</li>
+				      	</ul>
+				      </td>
+				      <td>
+				      	<ul>
+				      		<li>Bel vestito</li>
+				      		<li>Mantello di seta, impossibile dire di che colore;</li>
+				      		<li>Riflessi ora verdi, ora rossi, ora blu;</li>
+				      		<li>Cammina senza scarpe</li>
+				      	</ul>
+				      </td>
+				    </tr>
+				    <tr>
+				      <th scope="row">Descrizione<br/><em>modus operandi</em><br/>del Mago:</th>
+				      <td>
+				      	<ul>
+				      		<li>Passo lento e pesante che saliva su per le scale;</li>
+				      		<li>Uomo cattivo, che viene dai bambini;</li>
+				      		<li>Butta loro negli occhi manciate di sabbia;</li>
+				      		<li>Schizzare sanguinanti fuori dal capo;</li>
+				      		<li>Li porta sulla luna in pasto ai suoi figlioletti;</li> 
+				      		<li>Uomo crudele;</li>
+				      		<li>Paurosa visione;</li>
+				      		<li>Fantasma pauroso;</li>
+				      		<li>Cattivo, odioso, ripugnante;</li>
+				      		<li>L’odiato e nauseante;</li>
+				      		<li>Pauroso uomo della sabbia;</li>
+				      	</ul>
+				      </td>
+				      <td>
+				      	<ul>
+				      		<li>Nessuno che sappia tante storie quante ne sa Ole Chiudigliocchi;</li>
+				      		<li>Sale le scale silenziosamente;</li>
+				      		<li>Spruzza un po' di latte negli occhietti dei bambini;</li>
+				      		<li>Ole Chiudigliocchi vuole il bene dei bambini;</li>
+				      		<li>Desidera soltanto che stiano tranquilli;</li>
+				      		<li>Tiene sotto le braccia due ombrelli</li>
+				      		<li>Uno pieno di figure, e lo apre sopra i bambini buoni<br/>che così sognano per tutta la notte le storie più belle;</li>
+				      		<li>L'altro invece non ha niente e viene aperto sui bambini cattivi<br/>che così dormono in modo strano<br/>e quando si svegliano la mattina, non hanno sognato niente;</li>
+				      		<li>Ole Chiudigliocchi toccò il quadro con la siringa magica<br/>e subito gli uccelli cominciarono a cantare,<br/>i rami degli alberi a agitarsi e le nuvole a passare nel cielo,<br/>tanto che si potevano vedere le ombre sul paesaggio;</li>
+				      		<li>Era stato un viaggio meraviglioso quello che<br/>Ole Chiudigliocchi gli aveva fatto fare quella notte;</li>
+				      	</ul>
+				      </td>
+				    </tr>
+				    <tr>
+				    	<th scope="row">Rappresentazione grafica<br/>del Mago:</th>
+				    	<td><a href="https://de.wikipedia.org/wiki/Der_Sandmann_(Hoffmann)#/media/Datei:Hoffmann_sandmann.png" target="_blank"><img src="img/H2_sandmann.png"/></a></td>
+				    	<td><a href="https://it.wikipedia.org/wiki/Ole_Chiudigliocchi#/media/File:Vilhelm_Pedersen,_OLE_LUK%C3%98JE,_ubt.jpeg" target="_blank"><img src="img/OLE_LUKØJE-Copiatab.jpeg"/></a></td>
+				    </tr>
+				    <tr>
+				    	<th scope="row">Dati alla mano:</th>
+				    	<td><!-- Exported from Voyant Tools (voyant-tools.org) --> <iframe style='width: 300px; height: 300px;' src='https://voyant-tools.org/tool/Trends/?query=nataniele&query=clara&query=occhi&query=coppelius&query=sabbia&query=coppola&query=lotario&query=padre&query=parole&query=l%E2%80%99uomo&query=viso&query=sguardo&query=mani&query=fuoco&query=pazzo&query=morte&query=grid%C3%B2&query=bambola&query=afferr%C3%B2&query=terribile&query=bambini&query=vecchio&query=l%E2%80%99odioso&query=dellasabbia&query=pauroso&query=oscure&query=odioso&query=notte&mode=document&corpus=55dde8b23146ec44b9c17a3006275e0e'></iframe></td>
+				    	<td><!-- Exported from Voyant Tools (voyant-tools.org) --> <iframe style='width: 300px; height: 300px;' src='https://voyant-tools.org/tool/Cirrus/?visible=95&corpus=bcd814a2454b5118ac64d58bb67d6ca4'></iframe></td>
+				    </tr>
+				    <tr>
+				    	<th scope="row">Standard di descrizione:</th>
+				    	<td><a href="" target="_blank" class="btn btn-outline-primary btn-sm" title="Vai al codice xml/dc"><i class="bi bi-code"></i> XML / DC</a> <a href="item-tei.xml" target="_blank" class="btn btn-outline-primary btn-sm" title="Vai al codice xml/tei"><i class="bi bi-code"></i> XML / TEI</a></td>
+				    	<td><a href="item-dc.xml" target="_blank" class="btn btn-outline-primary btn-sm" title="Vai al codice xml/dc"><i class="bi bi-code"></i> XML / DC</a> <a href="" target="_blank" class="btn btn-outline-primary btn-sm" title="Vai al codice xml/tei"><i class="bi bi-code"></i> XML / TEI</a></td>
+				    </tr>
+				  </tbody>
+				</table>
+
+				<!-- Tag -->
+                      <div class="text-center">
+                        <button type="button" class="btn btn-outline-primary btn-sm"><i class="bi bi-bookmark-heart"></i>
+                        Catalogo</button>
+                        <button type="button" class="btn btn-outline-primary btn-sm"><i class="bi bi-bookmark-heart"></i>
+                        Manoscritto</button>
+                        <button type="button" class="btn btn-outline-primary btn-sm"><i class="bi bi-bookmark-heart"></i>
+                        Fiabe per bambini</button>
+                        <button type="button" class="btn btn-outline-primary btn-sm"><i class="bi bi-bookmark-heart"></i>
+                        C.H. Andersen</button>
+                        <button type="button" class="btn btn-outline-primary btn-sm"><i class="bi bi-bookmark-heart"></i>
+                        E.T.A. Hoffmann</button>
+                        <button type="button" class="btn btn-outline-primary btn-sm"><i class="bi bi-bookmark-heart"></i>
+                        Mago sabbiolino</button>
+                      </div>
+			</div>
+		</div>
+
+<!-- aside di dx -->
+<div class="col-md-2 col-sm-2 col-xs-12 mt-4">
+	<aside>
+		<a href="#"><div class="text-end"><i class="bi bi-question-circle"></i> Guida</div></a>
+
+		<!-- linea divisoria  -->
+    	<div class="dropdown-divider mt-4" style="border-color: #121254;"></div>
+
+    	<!-- geolocalizzazione -->
+        <div>
+        	<h5><i class="bi bi-geo-alt-fill"></i> Det Kongelige Bibliotek</h5>
+            	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.8963580282125!2d12.58047011554151!3d55.67340240558097!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46525315bbb3a2df%3A0x6c4cc2710ba0300c!2sBiblioteca%20reale!5e0!3m2!1sit!2sit!4v1669027532036!5m2!1sit!2sit" width="220" height="220" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" alt="Geolocalizzazione Det Kongelige Bibliotek" title="Geolocalizzazione Det Kongelige Bibliotek"></iframe>
+        </div>
+		
+		<!-- linea divisoria  -->
+    	<div class="dropdown-divider mt-4" style="border-color: #121254;"></div>
+
+    	<!-- suggerimento 1 -->
+	    <div class="container pt-3 pb-3 aside text-start">
+	      <h5><i class="bi bi-film"></i> I nostri suggerimenti multimediali:</h5><br/>
+				<div class="card h-100" style="width: 11rem;">
+					<a href="https://it.wikipedia.org/wiki/The_Sandman_(film_1992)" target="_blank">
+					<img src="img/corto-berry.png" class="card-img-top" alt="cortometraggio"/></a>
+					<div class="card-body">
+						<h5 class="card-title"><em>The Sandman</em></h5>
+						<p class="card-text">Ispiratosi al racconto di Hoffmann, <em>The Sandman</em> (1992) è un cortometraggio statunitense di animazione diretto da Paul Berry.</p>
+						<a href="https://www.youtube.com/watch?v=2Hz3QB31K_c" class="btn btn-outline-primary">Guarda il cortometraggio!</a>
+					</div>
+				</div>
+	  
+	  	<!-- linea divisoria  -->
+    	<div class="dropdown-divider mt-4 mb-4" style="border-color: #121254;"></div>
+
+    	<!-- suggerimento 2 -->	
+    	<div class="card h-100" style="width: 11rem;">
+					<a href="https://it.wikipedia.org/wiki/The_Sandman_(serie_televisiva)" target="_blank">
+					<img src="img/s-netflix.jpg" class="card-img-top" alt="seri netflix"/></a>
+					<div class="card-body">
+						<h5 class="card-title"><em>The Sandman</em></h5>
+						<p class="card-text">Serie televisiva statunitense del 2022, creata da Neil Gaiman, David S. Goyer e Allan Heinberg, basata sull'omonimo fumetto della DC Comics.</p>
+						<a href="https://www.netflix.com/it/title/81150303" class="btn btn-outline-primary">Guarda la serie!</a>
+					</div>
+				</div>	      
+	      </aside>
+		</div>
+	</div>
+</main>
+<br/>
+
+<section class="container-fluid" title="Torna su">
+ <p align="center"><a href="#su" class="linktornasu"><i class="bi bi-arrow-up-circle"></i></a></p>
+</section>
+
+<!-- footer -->
+<hr>
+<footer>
+  <div class= "container-fluid bg-light" id="info">
+    <div class="row">
+    <div class="col-md-4 text-start">Il sito web <em>Il Mago Sabbiolino</em> è stato realizzato nell'autunno 2022 per la prova d'esame del corso <a class="digitalhumanitiesepatrimonioculturale" href="https://www.unibo.it/it/didattica/insegnamenti/insegnamento/2021/423307" target="_blank">Digital Humanities e patrimonio culturale</a>, tenuto dalla Prof.ssa Francesca Tomasi, presso l'Alma Mater Studiorum - Università di Bologna, corso di Laurea in <a class="italianistica" href="https://corsi.unibo.it/magistrale/ItalianisticaCultureLetterarieLinguistica" target="_blank">Italianistica</a>.
+      </div> 
+      <div class="col-md-4 text-center mt-3">
+        <a href="https://www.unibo.it/it/" target="_blank">
+        <img src="img/logo.jpg" alt="Logo Alma Mater Studiorum - Università di Bologna" title="Logo Alma Mater Studiorum - Università di Bologna"/>
+      </a>
+      </div>
+      <div class="col-md-4">
+          <h5 class="text-end"><b>Contatti</b></h5>
+          <ul class="list-unstyled text-end">                                       
+            <li><a class="licenza" href="http://creativecommons.org/licenses/by/4.0/" target="_blank"
+                title="Licenza Creative Commons"><img alt="Licenza Creative Commons" style="width: 60px;" src="https://i.creativecommons.org/l/by/4.0/88x31.png"/></a></li>
+                <li>&copy; Maira Martini</a></li>
+                <li><i class="bi bi-envelope"></i> Contattami per suggerimenti e informazioni! <a class="scrivimi" href="mailto:maira.martini@studio.unibo.it" target="_blank">maira.martini@studio.unibo.it</a></li>
+                <a href="https://www.facebook.com/maira.martini.9/" target="_blank"><i class="bi bi-facebook"></i></a>
+                <a href="https://www.instagram.com/accounts/login/" target="_blank"><i class="bi bi-instagram"></i></a>
+            </ul>
+      </div>
+      </div>
+  </div>
+</footer>
+
+<!-- Bootstrap js -->
+<script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

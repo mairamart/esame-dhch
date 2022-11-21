@@ -1,0 +1,71 @@
+/* Box-sizing per settare la struttura generale della pagina */
+* {
+  box-sizing: border-box;
+}
+
+/* Font di Google*/ 
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital@1&display=swap');
+
+  
+/* titoli */
+.offcanvas-title {color: white
+}
+
+
+/* Navbar */
+.bg-dark {background-color: #121254 !important;  opacity: 0.9; font-size: 1em;
+}
+.navbar-brand {font-family:"EB Garamond", serif;
+            font-size: 2em; 
+            font-style: oblique
+}
+.offcanvas-header {background-color: #121254;
+                  opacity: 1.5;
+                  font-size: 1em; 
+}
+.offcanvas-body {background-color: #121254;
+                opacity: 1.5;
+                font-size: 1em; 
+}
+
+
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+/* img usata */ 
+.bg { background-image: url("img/R.jpg");
+      height: 100%; 
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+}
+
+/*bg text*/
+.content {
+  position: absolute; 
+  bottom: 0; /* At the bottom. Use top:0 to append it to the top */
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+  color: #f1f1f1; 
+  width: 100%; 
+  padding: 20px; 
+}
+
+
+/*footer*/
+
+/* link footer */       
+.scrivimi,.digitalhumanitiesepatrimonioculturale, .italianistica {text-decoration: none;
+                                                                  color: #0000FF ;
+}
+
+.scrivimi:hover, .digitalhumanitiesepatrimonioculturale:hover, .italianistica:hover {text-decoration: underline;
+                                                                                    color: #0000FF;
+}
+
+.scrivimi:visited, .digitalhumanitiesepatrimonioculturale:visited, .italianistica:visited {text-decoration: none;
+                                                                                           color: #121254;
+}
+

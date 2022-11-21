@@ -1,0 +1,65 @@
+/* Box-sizing per settare la struttura generale della pagina */
+* {
+  box-sizing: border-box;
+}
+
+/*sfondo body*/
+body {background-color: #babad1; padding-top: 150px; 
+}
+
+title.h7 {font-style: strong !important;
+} 
+
+
+.card-body {text-align: justify !important;
+} 
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+
+/* titoli */
+.offcanvas-title {color: white
+}
+
+/* Navbar */
+.bg-dark {background-color: #121254 !important;  opacity: 0.9; font-size: 1em;
+}
+.navbar-brand {font-family:"EB Garamond", serif;
+            font-size: 2em; 
+            font-style: oblique
+}
+.offcanvas-header {background-color: #121254 !important;
+                  opacity: 1.5;
+                  font-size: 1em; 
+}
+.offcanvas-body {background-color: #121254 !important;
+                opacity: 1.5;
+                font-size: 1em; 
+}
+
+
+/*breadcrumbs*/
+ol.breadcrumb {padding: 7px;}
+
+
+/*footer */      
+/*bg*/
+.bg-light {background-color: white !important; 
+}
+
+/*link*/ 
+.scrivimi,.digitalhumanitiesepatrimonioculturale, .italianistica {text-decoration: none;
+                                                                  color: #0000FF ;
+}
+
+.scrivimi:hover, .digitalhumanitiesepatrimonioculturale:hover, .italianistica:hover {text-decoration: underline;
+                                                                                    color: #0000FF;
+}
+
+.scrivimi:visited, .digitalhumanitiesepatrimonioculturale:visited, .italianistica:visited {text-decoration: none;
+                                                                                           color: #121254;
+}
+
+
