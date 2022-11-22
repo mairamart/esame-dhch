@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<rdf:RDF
+
+xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+xmlns:dc="https://www.berliner-intellektuelle.eu/">
+
+  <rdf:Description about="https://www.berliner-intellektuelle.eu/scans/p0185/XV_532_0007.jpg">
+    <dc:Title>Manoscritto Der Sandmann</dc:Title>
+    <dc:Description>
+      pagina 6 del manoscritto Der Sandmann di E.T.A HOFFMANN
+    </dc:Description>
+    <dc:Publisher>https://www.berliner-intellektuelle.eu/</dc:Publisher>
+    <dc:Format>text, 16,3-16,7 x 20,3-20,7</dc:Format>
+    <dc:date>16. November 1815.</dc:date>
+    <dc:Language>de</dc:Language>
+  </rdf:Description>
+</rdf:RDF>
